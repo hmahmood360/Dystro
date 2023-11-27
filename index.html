@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class=" shadow-lg py-2 px-4 lg:px-16 bg-white">
+        <div class="container mx-auto px-4 ">
+          <div class="flex justify-between">
+      
+            <div class="flex space-x-2 lg:space-x-20 text-sm font-bold">
+              <!-- logo -->
+              <div>
+                <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+                  <img src="assets/img/Group.svg" alt="Logo">
+                </a>
+              </div>
+      
+              
+              <div class="hidden md:flex mt-2  h-11  bg-gray-100  items-center rounded-lg">
+                <svg class="w-4 mx-3 " width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.40148 16.5C10.1549 16.4996 11.8578 15.9054 13.239 14.812L17.5817 19.208L18.9785 17.794L14.6359 13.398C15.7166 11.9997 16.3039 10.2754 16.3044 8.5C16.3044 4.089 12.7589 0.5 8.40148 0.5C4.04403 0.5 0.498596 4.089 0.498596 8.5C0.498596 12.911 4.04403 16.5 8.40148 16.5ZM8.40148 2.5C11.6703 2.5 14.3286 5.191 14.3286 8.5C14.3286 11.809 11.6703 14.5 8.40148 14.5C5.13265 14.5 2.47432 11.809 2.47432 8.5C2.47432 5.191 5.13265 2.5 8.40148 2.5Z" fill="#98A4B5"/>
+                  </svg>
+                <input class="   bg-gray-100 h-10 lg:w-80  px-2 rounded-r-lg text-sm focus:outline-none"
+                  type="search" name="search" placeholder="Search">
+                  
+              </div>
+            </div>
+      
+            <!-- nav -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold">
+              <a href="" class="secondary-color py-5 ml-4 ">Home</a>
+              <a href="" class="secondary-color py-5  ">Shop</a>
+              <a href="" class="secondary-color py-5  ">Forum</a>
+              <a href="" class="secondary-color py-5  ">Groups</a>
+              <div class="relative -mt-4">
+                <a href="" class="pl-6  "><img src="assets/img/bell.svg" alt=""></a>
+                <div class="h-2 w-2 rounded-full bg-red-500 absolute -mt-6 ml-3"></div>
+              </div>
+              <a href=""><img src="assets/img/person.png" alt=""></a>
+            </div>
+      
+            <!-- mobile button goes here -->
+            
+            <div class="md:hidden flex items-center">
+              <a href="" class="block pl-6 w-11"><img src="assets/img/bell.svg" alt=""></a>
+              <a href=""><img class="mx-3 w-7" src="assets/img/person.png" alt=""></a>
+              <button class="mobile-menu-button">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+      
+          </div>
+        </div>
+      
+        
+        <!-- mobile menu -->
+        <div class="mobile-menu hidden md:hidden px-4 pb-4 ">
+          <div class=" h-11  bg-gray-100 flex items-center rounded-lg">
+            <svg class="w-4 mx-3 " width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.40148 16.5C10.1549 16.4996 11.8578 15.9054 13.239 14.812L17.5817 19.208L18.9785 17.794L14.6359 13.398C15.7166 11.9997 16.3039 10.2754 16.3044 8.5C16.3044 4.089 12.7589 0.5 8.40148 0.5C4.04403 0.5 0.498596 4.089 0.498596 8.5C0.498596 12.911 4.04403 16.5 8.40148 16.5ZM8.40148 2.5C11.6703 2.5 14.3286 5.191 14.3286 8.5C14.3286 11.809 11.6703 14.5 8.40148 14.5C5.13265 14.5 2.47432 11.809 2.47432 8.5C2.47432 5.191 5.13265 2.5 8.40148 2.5Z" fill="#98A4B5"/>
+              </svg>  
+            <input class=" md:block bg-gray-100 h-10 w-80  px-2 rounded-r-lg text-sm focus:outline-none"
+              type="search" name="search" placeholder="Search">
+          </div>
+          <a href="" class="block secodary-color font-semibold pl-1 py-2 pt-4 ">Home</a>
+          <a href="" class="block secodary-color font-semibold pl-1 py-2  ">Shop</a>
+          <a href="" class="block secodary-color font-semibold pl-1 py-2  ">Forum</a>
+          <a href="" class="block secodary-color font-semibold pl-1 py-2  ">Groups</a>
+          
+
+        </div>
+    </nav>
+
+    <section class="hero-section ">
+        <div class="container mx-auto px-8 md:px-24 ">
+            <div class="  ">
+                <h1  class="font-semibold text-3xl md:text-5xl primary-color text-center pt-20">Get Best Price<br>for Our Product</h1>
+                <p class="text-center font-medium third-color mt-6 secondary-color text-sm md:text-base">We give you the option to decide how much you need to use.</p>
+            </div>
+            <div class="py-48">
+
+            </div>
+        </div>
+    </section>
+    
+    <section>
+      <div class="container mx-auto px-4 lg:px-16 xl:px-24">
+        <div class="-mt-80 grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-12 justify-items-center mx-6 lg:mx-12 mt-20 ">
+          <div class="bg-white rounded-lg w-full shadow-lg">
+              <div class="p-8 pb-6">
+                  <div class="flex items-center">
+                      <h1 class="text-4xl primary-color font-bold inline">$39 </h1>
+                      <span class="pl-1 pt-1 third-color font-normal ">/month</span>
+                  </div>
+                  <h2 class="text-2xl primary-color font-bold mt-3">Standard</h2>
+                  <p class="third-color mt-3 border-b pb-5 text-sm " >Better for growing businesses that want more customers.</p>
+                  <div class="flex items-center mt-6">
+                      <img class="w-6" src="assets/img/tick.svg" alt="">
+                      <p class="text-sm primary-color pl-2">Unlimited project use</p>
+                  </div>
+                  <div class="flex items-center mt-6">
+                      <img class="w-6" src="assets/img/tick.svg" alt="">
+                      <p class="text-sm primary-color pl-2">Advanced dashboard</p>
+                  </div>
+                  <div class="flex items-center mt-6">
+                      <img class="w-6" src="assets/img/tick.svg" alt="">
+                      <p class="text-sm primary-color pl-2">All components included</p>
+                  </div>
+                  
+                  <button class="flex items-center justify-between w-full py-2 px-5 mt-8  md:mt-20 border-2 border-gray-3 00 rounded-lg">
+                      <p class="font-semibold third-color">Get Started</p>
+                      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.89577 12.5278L12.2114 7.21216C12.4684 6.95784 12.4684 6.54224 12.2114 6.28519L6.89577 0.972322C6.64148 0.715281 6.22585 0.715281 5.96884 0.972322L5.3618 1.57936C5.09932 1.83912 5.10476 2.26295 5.37275 2.51724L8.66767 5.65629H0.80908C0.445415 5.65629 0.152832 5.94887 0.152832 6.31254V7.18754C0.152832 7.5512 0.445415 7.84378 0.80908 7.84378H8.66767L5.37275 10.9828C5.10751 11.2371 5.10204 11.661 5.3618 11.9207L5.96884 12.5278C6.22313 12.7848 6.63876 12.7848 6.89577 12.5278Z" fill="#5A7184"/>
+                        </svg>
+                        
+                  </button>
+              </div>
+          </div>
+          <div class="bg-white rounded-lg w-full mt-6 md:-mt-6 md:-mb-5 shadow-lg">
+              <div>
+                  <p class="rounded-t-lg uppercase bg text-white text-center py-2">recommended</p>
+              </div>
+              <div class="p-8 pt-4 ">
+                  <div class="flex items-center">
+                      <h1 class="text-4xl forth-color font-bold inline">$99 </h1>
+                      <span class="pl-1 pt-1 third-color font-normal ">/month</span>
+                  </div>
+                  <h2 class="text-2xl primary-color font-bold mt-3">Basic</h2>
+                  <p class="third-color mt-3 border-b pb-5 text-sm " >All the basics for businesses that are just getting started.</p>
+                  <div class="flex items-center mt-6">
+                      <img class="w-6" src="assets/img/tick.svg" alt="">
+                      <p class="text-sm primary-color pl-2">Single project use</p>
+                  </div>
+                  <div class="flex items-center mt-6">
+                      <img class="w-6" src="assets/img/tick.svg" alt="">
+                      <p class="text-sm primary-color pl-2">Basic dashboard</p>
+                  </div>
+                  <div class="flex items-center mt-6">
+                      <img class="w-6" src="assets/img/tick.svg" alt="">
+                      <p class="text-sm primary-color pl-2">All components included</p>
+                  </div>
+                  <div class="flex items-center mt-6">
+                      <img class="w-6" src="assets/img/tick.svg" alt="">
+                      <p class="text-sm primary-color pl-2">Advanced insight</p>
+                  </div>
+                  <button class="flex items-center justify-between w-full py-2 px-5  mt-9   bg">
+                      <p class="font-semibold text-white">Get Started</p>
+                      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.89577 12.5278L12.2114 7.21216C12.4684 6.95784 12.4684 6.54224 12.2114 6.28519L6.89577 0.972322C6.64148 0.715281 6.22585 0.715281 5.96884 0.972322L5.3618 1.57936C5.09932 1.83912 5.10476 2.26295 5.37275 2.51724L8.66767 5.65629H0.80908C0.445415 5.65629 0.152832 5.94887 0.152832 6.31254V7.18754C0.152832 7.5512 0.445415 7.84378 0.80908 7.84378H8.66767L5.37275 10.9828C5.10751 11.2371 5.10204 11.661 5.3618 11.9207L5.96884 12.5278C6.22313 12.7848 6.63876 12.7848 6.89577 12.5278Z" fill="white"/>
+                        </svg>
+                  </button>
+              </div>
+          </div>
+          <div class="bg-white rounded-lg w-full mt-6 md:mt-0 shadow-lg">
+              <div class="p-8 pb-6">
+                  
+                  <div class="flex items-center">
+                      <h1 class="text-4xl fifth-color font-bold inline">$339 </h1>
+                      <span class="pl-1 pt-1 third-color font-normal ">/month</span>
+                  </div>
+                  <h2 class="text-2xl primary-color font-bold mt-3">Premium</h2>
+                  <p class="third-color mt-3 border-b pb-5 text-sm " >Advanced features for pros who need more customization.</p>
+                  <div class="flex items-center mt-6">
+                      <img class="w-6" src="assets/img/tick.svg" alt="">
+                      <p class="text-sm primary-color pl-2">Unlimited project use</p>
+                  </div>
+                  <div class="flex items-center mt-6">
+                      <img class="w-6" src="assets/img/tick.svg" alt="">
+                      <p class="text-sm primary-color pl-2">Advanced dashboard</p>
+                  </div>
+                  <div class="flex items-center mt-6">
+                      <img class="w-6" src="assets/img/tick.svg" alt="">
+                      <p class="text-sm primary-color pl-2">Mutlivariate components</p>
+                  </div>
+                  <div class="flex items-center mt-6">
+                      <img class="w-6" src="assets/img/tick.svg" alt="">
+                      <p class="text-sm primary-color pl-2">Phone Support</p>
+                  </div>
+                  <button class="flex items-center justify-between w-full py-2 px-5  mt-8 border-2 border-gray-3 00 rounded-lg">
+                      <p class="font-semibold third-color">Get Started</p>
+                      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.89577 12.5278L12.2114 7.21216C12.4684 6.95784 12.4684 6.54224 12.2114 6.28519L6.89577 0.972322C6.64148 0.715281 6.22585 0.715281 5.96884 0.972322L5.3618 1.57936C5.09932 1.83912 5.10476 2.26295 5.37275 2.51724L8.66767 5.65629H0.80908C0.445415 5.65629 0.152832 5.94887 0.152832 6.31254V7.18754C0.152832 7.5512 0.445415 7.84378 0.80908 7.84378H8.66767L5.37275 10.9828C5.10751 11.2371 5.10204 11.661 5.3618 11.9207L5.96884 12.5278C6.22313 12.7848 6.63876 12.7848 6.89577 12.5278Z" fill="#5A7184"/>
+                        </svg>
+                        
+                  </button>
+              </div>
+          </div>
+      </div>
+      <p class="text-center primary-color mt-8 md:mt-16 mb-8 md:mb-20 md:text-lg font-medium"> Premium plan is $124 per active app per month when paying on <br>a monthly basis. It's $90 per month when paying annually. </p>
+      <div class="border-b">
+
+      </div>
+      </div>
+    </section>
+
+    <section class="cards-section">
+        <div class="container mx-auto px-6 mb-8 md:mb-32">
+            <h1 class="font-bold text-3xl primary-color text-center pt-8 md:pt-20 ">Buy in-game currency</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-x-6 gap-y-4 md:gap-y-14 mt-12 md:mt-20 md:mx-20 md:space-y-0 space-y-12">
+              <div class="border border-gray-300  bg-white rounded-2xl shadow-lg">
+                <div class="flex justify-center">
+                  <div class="absolute w-16 h-16 bg-white rounded-full border border-gray-300 bg-white -mt-8 text-white font-bold text-xl flex justify-center items-center">
+                      <img class=" w-10 h-10" style=" border: 1px dashed #C7C7C7; " src="assets/img/Icon1.png" alt="">
+                  </div>
+                </div>
+                <div class="px-6 md:px-12 pb-4">
+                  <h4 class="mt-10 text-2xl font-semibold text-center primary-color">100 coins</h4>
+                  <p class="text-center third-color mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="border border-gray-300  bg-white rounded-2xl shadow-lg">
+                <div class="flex justify-center">
+                  <div class="absolute w-16 h-16 p-auto rounded-full border border-gray-300 bg-white -mt-8 text-white font-bold text-xl flex justify-center items-center">
+                      <img  class=" w-10 h-10" style=" border: 1px dashed #C7C7C7; " src="assets/img/Icon2.png" alt="">
+                  </div>
+                </div>
+                <div class="px-6 md:px-12 pb-4">
+                  <h4 class="mt-10 text-2xl font-semibold text-center primary-color">200 coins</h4>
+                  <p class="text-center third-color mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="border border-gray-300  bg-white rounded-2xl shadow-lg">
+                <div class="flex justify-center ">
+                  <div class="absolute w-16 h-16 rounded-full border border-gray-300 bg-white -mt-8 text-white font-bold text-xl flex justify-center items-center">
+                      <img  class=" w-10 h-10" style=" border: 1px dashed #C7C7C7; " src="assets/img/Icon3.png" alt="">
+                  </div>
+                </div>
+                <div class="px-6 md:px-12 pb-4">
+                  <h4 class="mt-10 text-2xl font-semibold text-center primary-color">300 coins</h4>
+                  <p class="text-center third-color mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="border border-gray-300  bg-white rounded-2xl shadow-lg">
+                <div class="flex justify-center">
+                  <div class="absolute w-16 h-16 p-auto rounded-full border border-gray-300 bg-white -mt-8 text-white font-bold text-xl flex justify-center items-center">
+                      <img  class=" w-10 h-10" style=" border: 1px dashed #C7C7C7; " src="assets/img/Icon4.png" alt="">
+                  </div>
+                </div>
+                <div class="px-6 md:px-12  pb-4">
+                  <h4 class="mt-10 text-2xl font-semibold text-center primary-color">400 coins</h4>
+                  <p class="text-center third-color mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="border border-gray-300  bg-white rounded-2xl shadow-lg">
+                <div class="flex justify-center">
+                  <div class="absolute w-16 h-16 p-auto rounded-full border border-gray-300 bg-white -mt-8 text-white font-bold text-xl flex justify-center items-center">
+                      <img  class=" w-10 h-10" style=" border: 1px dashed #C7C7C7; " src="assets/img/Icon5.png" alt="">
+                  </div>
+                </div>
+                <div class="px-6 md:px-12 pb-4">
+                  <h4 class="mt-10 text-2xl font-semibold text-center primary-color">500 coins</h4>
+                  <p class="text-center third-color mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="border border-gray-300  bg-white rounded-2xl shadow-lg">
+                <div class="flex justify-center">
+                  <div class="absolute w-16 h-16 p-auto rounded-full border border-gray-300 bg-white -mt-8 text-white font-bold text-xl flex justify-center items-center">
+                      <img  class=" w-10 h-10" style=" border: 1px dashed #C7C7C7; " src="assets/img/Icon6.png" alt="">
+                  </div>
+                </div>
+                <div class="px-6 md:px-12 pb-4">
+                  <h4 class="mt-10 text-2xl font-semibold text-center primary-color">600 coins</h4>
+                  <p class="text-center third-color mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+          
+        </div>
+        
+    </section>
+
+    <section class="faq-section bg">
+      <div class="container mx-auto px-6">
+        <div class="flex justify-center items-start py-10 md:py-16">
+          <div class="max-w-3xl my-1">
+            <h2 class="font-semibold text-white text-center mb-8 text-2xl md:text-4xl">Frequently Asked Questions</h2>
+            <ul class="flex flex-col text-white">
+              <li class="bg1 my-2 rounded-lg" x-data="accordion(1)">
+                <h2
+                  @click="handleClick(),myFunction()"
+                  class="flex flex-row justify-between items-center font-medium md:text-lg p-5 cursor-pointer"
+                >
+                  <span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                  
+                  <svg id="minus" class=" hidden"  class="fill-current text-white h-6 w-6 transform  duration-500" width="13" height="4" viewBox="0 0 13 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5278 3.06249C12.011 3.06249 12.4028 2.67066 12.4028 2.1875V1.3125C12.4028 0.829337 12.011 0.4375 11.5278 0.4375H1.02783C0.544669 0.4375 0.152832 0.829337 0.152832 1.3125V2.1875C0.152832 2.67066 0.544669 3.06249 1.02783 3.06249H11.5278Z" fill="white"/>
+                  </svg>
+                  <svg id="plus" class="" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.71532 12.875C7.19848 12.875 7.59031 12.4831 7.59031 12V8.06248H11.5278C12.011 8.06248 12.4028 7.67065 12.4028 7.18748V6.31249C12.4028 5.82933 12.011 5.43749 11.5278 5.43749H7.59031V1.5C7.59031 1.01684 7.19848 0.625 6.71532 0.625H5.84032C5.35716 0.625 4.96532 1.01684 4.96532 1.5V5.43749H1.02783C0.544669 5.43749 0.152832 5.82933 0.152832 6.31249V7.18748C0.152832 7.67065 0.544669 8.06248 1.02783 8.06248H4.96532V12C4.96532 12.4831 5.35716 12.875 5.84032 12.875H6.71532Z" fill="white"/>
+                  </svg>
+                    
+                    
+                </h2>
+                <div
+                  x-ref="tab"
+                  :style="handleToggle()"
+                  class="bg1 overflow-hidden max-h-0 duration-500 transition-all"
+                >
+                  <p class="p-5 pt-0 mr-6 md:mr-20 sixth-color">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua                </p>
+                </div>
+              </li>
+              <li class="bg1 my-2 rounded-lg" x-data="accordion(2)">
+                <h2 
+                  @click="handleClick(),myFunction2()"
+                  class="flex flex-row justify-between items-center font-medium md:text-lg p-5 cursor-pointer"
+                >
+                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                  <svg id="minus2" class=" hidden" class="fill-current text-white h-6 w-6 transform  duration-500" width="13" height="4" viewBox="0 0 13 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5278 3.06249C12.011 3.06249 12.4028 2.67066 12.4028 2.1875V1.3125C12.4028 0.829337 12.011 0.4375 11.5278 0.4375H1.02783C0.544669 0.4375 0.152832 0.829337 0.152832 1.3125V2.1875C0.152832 2.67066 0.544669 3.06249 1.02783 3.06249H11.5278Z" fill="white"/>
+                  </svg>
+                  <svg id="plus2" class="" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.71532 12.875C7.19848 12.875 7.59031 12.4831 7.59031 12V8.06248H11.5278C12.011 8.06248 12.4028 7.67065 12.4028 7.18748V6.31249C12.4028 5.82933 12.011 5.43749 11.5278 5.43749H7.59031V1.5C7.59031 1.01684 7.19848 0.625 6.71532 0.625H5.84032C5.35716 0.625 4.96532 1.01684 4.96532 1.5V5.43749H1.02783C0.544669 5.43749 0.152832 5.82933 0.152832 6.31249V7.18748C0.152832 7.67065 0.544669 8.06248 1.02783 8.06248H4.96532V12C4.96532 12.4831 5.35716 12.875 5.84032 12.875H6.71532Z" fill="white"/>
+                  </svg>
+                    
+                   
+                </h2>
+                <div
+                  class=" overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-5 pt-0 mr-6 md:mr-20 sixth-color">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua                  </p>
+                </div>
+              </li>
+              <li class="bg1 my-2 rounded-lg" x-data="accordion(3)">
+                <h2
+                  @click="handleClick(),myFunction3()"
+                  class="flex flex-row justify-between items-center font-medium md:text-lg p-5 cursor-pointer"
+                >
+                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                  <svg id="minus3" class=" hidden" class="fill-current text-white h-6 w-6 transform  duration-500" width="13" height="4" viewBox="0 0 13 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5278 3.06249C12.011 3.06249 12.4028 2.67066 12.4028 2.1875V1.3125C12.4028 0.829337 12.011 0.4375 11.5278 0.4375H1.02783C0.544669 0.4375 0.152832 0.829337 0.152832 1.3125V2.1875C0.152832 2.67066 0.544669 3.06249 1.02783 3.06249H11.5278Z" fill="white"/>
+                  </svg>
+                  <svg id="plus3" class="" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.71532 12.875C7.19848 12.875 7.59031 12.4831 7.59031 12V8.06248H11.5278C12.011 8.06248 12.4028 7.67065 12.4028 7.18748V6.31249C12.4028 5.82933 12.011 5.43749 11.5278 5.43749H7.59031V1.5C7.59031 1.01684 7.19848 0.625 6.71532 0.625H5.84032C5.35716 0.625 4.96532 1.01684 4.96532 1.5V5.43749H1.02783C0.544669 5.43749 0.152832 5.82933 0.152832 6.31249V7.18748C0.152832 7.67065 0.544669 8.06248 1.02783 8.06248H4.96532V12C4.96532 12.4831 5.35716 12.875 5.84032 12.875H6.71532Z" fill="white"/>
+                  </svg>
+                </h2>
+                <div
+                  class=" overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-5 pt-0 mr-6 md:mr-20 sixth-color">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua                  </p>
+                </div>
+              </li>
+              <li class="bg1 my-2 rounded-lg" x-data="accordion(4)">
+                <h2
+                  @click="handleClick(),myFunction4()"
+                  class="flex flex-row justify-between items-center font-medium md:text-lg p-5 cursor-pointer"
+                >
+                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                  <svg id="minus4" class=" hidden" class="fill-current text-white h-6 w-6 transform  duration-500" width="13" height="4" viewBox="0 0 13 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5278 3.06249C12.011 3.06249 12.4028 2.67066 12.4028 2.1875V1.3125C12.4028 0.829337 12.011 0.4375 11.5278 0.4375H1.02783C0.544669 0.4375 0.152832 0.829337 0.152832 1.3125V2.1875C0.152832 2.67066 0.544669 3.06249 1.02783 3.06249H11.5278Z" fill="white"/>
+                  </svg>
+                  <svg id="plus4" class="" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.71532 12.875C7.19848 12.875 7.59031 12.4831 7.59031 12V8.06248H11.5278C12.011 8.06248 12.4028 7.67065 12.4028 7.18748V6.31249C12.4028 5.82933 12.011 5.43749 11.5278 5.43749H7.59031V1.5C7.59031 1.01684 7.19848 0.625 6.71532 0.625H5.84032C5.35716 0.625 4.96532 1.01684 4.96532 1.5V5.43749H1.02783C0.544669 5.43749 0.152832 5.82933 0.152832 6.31249V7.18748C0.152832 7.67065 0.544669 8.06248 1.02783 8.06248H4.96532V12C4.96532 12.4831 5.35716 12.875 5.84032 12.875H6.71532Z" fill="white"/>
+                  </svg>
+                </h2>
+                <div
+                  class=" overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-5 pt-0 mr-6 md:mr-20 sixth-color">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua                  </p>
+                </div>
+              </li>
+              <li class="bg1 my-2 rounded-lg" x-data="accordion(5)">
+                <h2
+                  @click="handleClick(),myFunction5()"
+                  class="flex flex-row justify-between items-center font-medium md:text-lg p-5 cursor-pointer"
+                >
+                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                  <svg id="minus5" class=" hidden" class="fill-current text-white h-6 w-6 transform  duration-500" width="13" height="4" viewBox="0 0 13 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5278 3.06249C12.011 3.06249 12.4028 2.67066 12.4028 2.1875V1.3125C12.4028 0.829337 12.011 0.4375 11.5278 0.4375H1.02783C0.544669 0.4375 0.152832 0.829337 0.152832 1.3125V2.1875C0.152832 2.67066 0.544669 3.06249 1.02783 3.06249H11.5278Z" fill="white"/>
+                  </svg>
+                  <svg id="plus5" class="" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.71532 12.875C7.19848 12.875 7.59031 12.4831 7.59031 12V8.06248H11.5278C12.011 8.06248 12.4028 7.67065 12.4028 7.18748V6.31249C12.4028 5.82933 12.011 5.43749 11.5278 5.43749H7.59031V1.5C7.59031 1.01684 7.19848 0.625 6.71532 0.625H5.84032C5.35716 0.625 4.96532 1.01684 4.96532 1.5V5.43749H1.02783C0.544669 5.43749 0.152832 5.82933 0.152832 6.31249V7.18748C0.152832 7.67065 0.544669 8.06248 1.02783 8.06248H4.96532V12C4.96532 12.4831 5.35716 12.875 5.84032 12.875H6.71532Z" fill="white"/>
+                  </svg>
+                </h2>
+                <div
+                  class=" overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-5 pt-0 mr-6 md:mr-20 sixth-color">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="carousel-section mt-5  bg2 relative">
+      <div class="container mx-auto py-10 md:py-20 px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-12  mx-3 lg:mx-44  flex items-center">
+              <div>
+                  <img class="w-28 md:w-40 lg:w-full" src="assets/img/quote.png" alt="">
+              </div>
+              <div class="col-span-1 lg:col-span-3 relative">
+                  <div class="carousel relative rounded relative overflow-hidden ">
+                      <div class="carousel-inner relative overflow-hidden w-full">
+                        <!--Slide 1-->
+                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                          checked="checked">
+                        <div class="carousel-item absolute opacity-0 b max-w-2xl "">
+                        
+                          <p class="text-xl md:text-3xl primary-color font-bold ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                          <p class="text-sm md:text-base mt-6  primary-color font-medium pr-16">— Ferdinand Stindl - Co Founder of CocoPay Company</p>
+                        </div>
+                        <label for="carousel-3" class="left control-1 w-10 h-10 ml-2 md:ml-10  cursor-pointer hidden  relative  leading-tight z-10 inset-y-0 left-0 bottom-0 ">
+                          <i class="fas fa-arrow-left primary-color"></i>
+                      </label>
+                        <label for="carousel-2" class="right next control-1 w-10 h-10 mr-2 md:mr-10  cursor-pointer hidden  relative	 leading-tight z-10 inset-y-0  bottom-0 right-0 ">
+                          <i class="fas fa-arrow-right primary-color"></i>
+                      </label>
+                    
+                        <!--Slide 2-->
+                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item absolute opacity-0 b max-w-2xl" >
+                          
+                          <p class="text-xl md:text-3xl primary-color font-bold">2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                          <p class="text-sm md:text-base mt-6  primary-color font-medium pr-16">— Ferdinand Stindl - Co Founder of CocoPay Company</p>
+                        </div>
+                        <label for="carousel-1" class="left-2 control-2 w-10 h-10 mr-2 md:mr-10  cursor-pointer hidden  relative	 leading-tight z-10 inset-y-0  bottom-0 right-0 ">
+                          <i class="fas fa-arrow-left primary-color"></i>
+                        </label>
+                        <label for="carousel-3" class="right-2 next control-2 w-10 h-10 mr-2 md:mr-10  cursor-pointer hidden  relative	 leading-tight z-10 inset-y-0  bottom-0 right-0">
+                          <i class="fas fa-arrow-right primary-color"></i>
+                        </label>
+                    
+                        <!--Slide 3-->
+                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item absolute opacity-0 b max-w-2xl" >
+                      
+                          <p class="text-xl md:text-3xl primary-color font-bold">3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                          <p class="text-sm md:text-base mt-6  primary-color font-medium pr-16">— Ferdinand Stindl - Co Founder of CocoPay Company</p>
+                        </div>
+                        <label for="carousel-2" class="left-3 control-3 w-10 h-10 mr-2 md:mr-10  cursor-pointer hidden  relative	 leading-tight z-10 inset-y-0  bottom-0 right-0 ">
+                          <i class="fas fa-arrow-left mt-3 primary-color"></i>
+                        </label>
+                        <label for="carousel-1" class="right-3 next control-3 w-10 h-10 mr-2 md:mr-10  cursor-pointer hidden  relative	 leading-tight z-10 inset-y-0  bottom-0 right-0">
+                          <i class="fas fa-arrow-right mt-3 primary-color"></i>
+                        </label>
+                    
+                        
+                    
+                      </div>
+                    </div>
+              </div>
+          </div>
+          <div class="py-20"></div>
+      </div>
+  </section>
+
+    <section class="newsletter-section ">
+      <div class="container mx-auto flex justify-center mb-16 md:mb-40 px-6">
+        <div class="  max-w-5xl rounded-2xl bg3 z-20 -mt-32">
+          <div class="p-5">
+            <h1 class="font-semibold text-2xl md:text-4xl text-white text-center pt-6 md:pt-10   ">Subscribe to our newsletter!</h1>
+            <div class="md:mx-60">
+              <p class="text-white text-sm md:text-base text-center mt-4 md:mt-8 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+            <div class="flex justify-center items-center my-4 md:my-8">
+              <div class="bg-white flex rounded">
+                <svg class="mx-2 md:mx-3 mt-2.5 md:mt-3.5" width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7603 6.94261C10.1983 7.37691 9.37861 8.01035 8.77781 7.99998C8.17702 8.01035 7.35735 7.37691 6.79537 6.94261C6.67918 6.85282 6.574 6.77154 6.48406 6.70622C2.64052 3.91697 2.08824 3.48477 1.26663 2.8418C1.20179 2.79106 1.13528 2.73901 1.06534 2.68438C0.884094 2.54061 0.777832 2.32501 0.777832 2.09374V1.5C0.777832 0.671873 1.44971 0 2.27783 0H15.2778C16.1059 0 16.7778 0.671873 16.7778 1.5V2.09374C16.7778 2.32501 16.6715 2.54376 16.4903 2.68438C16.4368 2.72634 16.3853 2.76677 16.335 2.80624C15.4867 3.47234 14.9864 3.86522 11.0716 6.70622C10.9816 6.77154 10.8764 6.85282 10.7603 6.94261ZM16.7778 10.5C16.7778 11.3281 16.1059 12 15.2778 12H2.27783C1.44971 12 0.777832 11.3281 0.777832 10.5V4.11248C0.777832 3.95623 0.955963 3.86873 1.08096 3.96563C1.29308 4.13039 1.52614 4.30865 1.83668 4.54153L2.03275 4.68814C2.7547 5.22651 3.86816 6.04204 5.89656 7.51561C5.99653 7.58857 6.1069 7.67373 6.2261 7.76571C6.89319 8.28044 7.83662 9.0084 8.77781 9.00309C9.72338 9.01106 10.6824 8.26921 11.3391 7.76126C11.4572 7.6699 11.5655 7.58611 11.6622 7.51561C14.8497 5.2 15.7747 4.50625 16.4747 3.96248C16.5966 3.86562 16.7778 3.95623 16.7778 4.10936V10.5Z" fill="#7900B1"/>
+                  </svg>
+                <input class="w-24 md:w-56 text-xs md:text-base" type="email" id="email" name="email" placeholder="Your Email" >
+                <button class="md:px-4 px-2 py-1 text-xs md:text-base text-white font-mediu bg rounded m-1 ">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="bg2">
+      <div class="container mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-2 pt-8 md:pt-20 text-xs md:text-base" >
+          <div class="col-span-1 lg:col-span-2">
+            <img class="mx-auto mt-2 mb-8 md:mb-12" src="assets/img/Group.svg" alt="">
+          </div>
+          <div class="text-center md:text-left md:pl-4 lg:pl-0">
+            <h3 class="text-lg md:text-xl font-bold seventh-color pb-2 ">ABOUT</h3>
+            <div class="lnk mb-3 md:mb-6 mx-auto md:mx-0"></div>
+            <a class="block py-1 font-medium" href="">Our Company</a>
+            <a class="block py-1 font-medium" href="">Careers</a>
+            <a class="block py-1 font-medium" href="">Supprt</a>
+            <a class="block py-1 font-medium" href="">How It Works  </a>
+            <a class="block py-1 font-medium" href="">Add a Place</a>
+            <a class="block py-1 font-medium" href="">Disclaimer</a>
+          </div>
+          <div class="mt-4 md:mt-0 text-center md:text-left md:pl-4 lg:pl-0">
+            <h3 class="text-lg md:text-xl font-bold seventh-color pb-2">LINKS </h3>
+            <div class="lnk mb-3 md:mb-6 mx-auto md:mx-0"></div>
+            <a class="block py-1 font-medium" href="">How It Works  </a>
+            <a class="block py-1 font-medium" href="">Add a Place</a>
+            <a class="block py-1 font-medium" href="">Disclaimer</a>
+          </div>
+          <div class="mt-4 md:mt-0 text-center md:text-left md:pl-3 lg:pl-0">
+            <h3 class="text-lg md:text-xl font-bold seventh-color pb-2  ">FOLLOW US</h3>
+            <div class="lnk mb-3 md:mb-6 mx-auto md:mx-0"></div>
+            <div class="flex font-medium my-3 justify-center md:justify-start">
+                <svg class="mr-2 mt-1" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.4228 6.09375C20.4795 6.83203 19.29 7.73438 15.1064 10.7695C14.2861 11.3848 12.7685 12.7383 11.333 12.7383C9.85641 12.7383 8.37985 11.3848 7.51852 10.7695C3.33493 7.73438 2.14548 6.83203 1.20212 6.09375C1.03806 5.9707 0.832977 6.09375 0.832977 6.29883V14.666C0.832977 15.7734 1.69431 16.6348 2.80173 16.6348H19.8642C20.9306 16.6348 21.833 15.7734 21.833 14.666V6.29883C21.833 6.09375 21.5869 5.9707 21.4228 6.09375ZM11.333 11.3848C12.2763 11.4258 13.6299 10.1953 14.3271 9.70312C19.7822 5.76562 20.1924 5.39648 21.4228 4.41211C21.6689 4.24805 21.833 3.96094 21.833 3.63281V2.85352C21.833 1.78711 20.9306 0.884766 19.8642 0.884766H2.80173C1.69431 0.884766 0.832977 1.78711 0.832977 2.85352V3.63281C0.832977 3.96094 0.956024 4.24805 1.20212 4.41211C2.43259 5.39648 2.84274 5.76562 8.29782 9.70312C8.99509 10.1953 10.3486 11.4258 11.333 11.3848Z" fill="#7900B1"/>
+                  </svg>
+              contact@abc.com
+            </div>
+            <div class="flex font-medium my-3 justify-center md:justify-start">
+                <svg class="mr-2 " width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.9799 5.5813C7.97986 5.5813 5.58923 8.0188 5.58923 10.9719C5.58923 13.9719 7.97986 16.3625 10.9799 16.3625C13.933 16.3625 16.3705 13.9719 16.3705 10.9719C16.3705 8.0188 13.933 5.5813 10.9799 5.5813ZM10.9799 14.4875C9.05798 14.4875 7.46423 12.9407 7.46423 10.9719C7.46423 9.05005 9.01111 7.50317 10.9799 7.50317C12.9017 7.50317 14.4486 9.05005 14.4486 10.9719C14.4486 12.9407 12.9017 14.4875 10.9799 14.4875ZM17.8236 5.3938C17.8236 4.69067 17.2611 4.12817 16.558 4.12817C15.8549 4.12817 15.2924 4.69067 15.2924 5.3938C15.2924 6.09692 15.8549 6.65942 16.558 6.65942C17.2611 6.65942 17.8236 6.09692 17.8236 5.3938ZM21.3861 6.65942C21.2924 4.97192 20.9174 3.47192 19.6986 2.25317C18.4799 1.03442 16.9799 0.659424 15.2924 0.565674C13.558 0.471924 8.35486 0.471924 6.62048 0.565674C4.93298 0.659424 3.47986 1.03442 2.21423 2.25317C0.995483 3.47192 0.620483 4.97192 0.526733 6.65942C0.432983 8.3938 0.432983 13.5969 0.526733 15.3313C0.620483 17.0188 0.995483 18.4719 2.21423 19.7375C3.47986 20.9563 4.93298 21.3313 6.62048 21.425C8.35486 21.5188 13.558 21.5188 15.2924 21.425C16.9799 21.3313 18.4799 20.9563 19.6986 19.7375C20.9174 18.4719 21.2924 17.0188 21.3861 15.3313C21.4799 13.5969 21.4799 8.3938 21.3861 6.65942ZM19.1361 17.1594C18.808 18.0969 18.058 18.8 17.1674 19.175C15.7611 19.7375 12.4799 19.5969 10.9799 19.5969C9.43298 19.5969 6.15173 19.7375 4.79236 19.175C3.85486 18.8 3.15173 18.0969 2.77673 17.1594C2.21423 15.8 2.35486 12.5188 2.35486 10.9719C2.35486 9.47192 2.21423 6.19067 2.77673 4.78442C3.15173 3.8938 3.85486 3.19067 4.79236 2.81567C6.15173 2.25317 9.43298 2.3938 10.9799 2.3938C12.4799 2.3938 15.7611 2.25317 17.1674 2.81567C18.058 3.1438 18.7611 3.8938 19.1361 4.78442C19.6986 6.19067 19.558 9.47192 19.558 10.9719C19.558 12.5188 19.6986 15.8 19.1361 17.1594Z" fill="#7900B1"/>
+                  </svg>
+              @abc
+            </div>
+            <div class="flex font-medium my-3 justify-center md:justify-start">
+                <svg class="mr-2" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.9031 0.102295C2.24495 0.102295 1.64661 0.353004 1.19786 0.82306C0.719203 1.32444 0.479858 1.95116 0.479858 2.60924C0.479858 3.29864 0.749108 3.9254 1.19786 4.39545C1.64661 4.86551 2.27485 5.14754 2.8732 5.11622C2.8732 5.11622 2.9031 5.11622 2.93304 5.11622C3.53139 5.11622 4.09979 4.86551 4.54854 4.39545C4.99729 3.9254 5.26654 3.29864 5.26654 2.60924C5.29644 1.95116 5.02719 1.32441 4.57844 0.854349C4.12969 0.352967 3.53135 0.102295 2.9031 0.102295ZM4.12969 3.95676C3.8006 4.30148 3.35185 4.52083 2.8732 4.4895C2.42445 4.4895 1.94579 4.30148 1.6167 3.95676C1.2577 3.61204 1.0782 3.11066 1.0782 2.60928C1.0782 2.10789 1.2577 1.63784 1.6167 1.26179C1.94579 0.917072 2.39454 0.729049 2.9031 0.729049C3.35185 0.729049 3.8006 0.917072 4.12969 1.26179C4.48869 1.63784 4.66819 2.10789 4.66819 2.60928C4.66819 3.11066 4.48869 3.61204 4.12969 3.95676Z" fill="#7900B1"/>
+                  <path d="M4.06976 5.7561H1.64652C1.16787 5.7561 0.778931 6.16347 0.778931 6.69622V17.6642C0.778931 18.1656 1.19777 18.6043 1.67643 18.6043H4.06976C4.54842 18.6043 4.96726 18.1656 4.96726 17.6955V6.69622C4.96726 6.1948 4.54842 5.7561 4.06976 5.7561ZM4.36892 17.6955C4.36892 17.8522 4.21932 17.9776 4.06976 17.9776H1.67643C1.52683 17.9776 1.37727 17.8209 1.37727 17.6642V6.69622C1.37727 6.53952 1.49693 6.38286 1.64652 6.38286H4.06976C4.21936 6.38286 4.36892 6.53956 4.36892 6.69622V17.6955Z" fill="#7900B1"/>
+                  <path d="M14.3229 5.44287H13.6946C12.5279 5.44287 11.421 5.97561 10.703 6.82172V6.38298C10.703 6.06963 10.4038 5.75623 10.1046 5.75623H7.11299C6.84374 5.75623 6.51465 6.00694 6.51465 6.35162V18.0403C6.51465 18.3851 6.84374 18.6044 7.11299 18.6044H10.4038C10.6731 18.6044 11.0022 18.3851 11.0022 18.0403V11.2715C11.0022 10.2374 11.7202 9.42263 12.6476 9.42263C13.1262 9.42263 13.575 9.61066 13.9041 9.95538C14.2032 10.2374 14.3229 10.6761 14.3229 11.2402V17.9777C14.3229 18.2911 14.6221 18.6045 14.9213 18.6045H17.9129C18.2121 18.6045 18.5112 18.2911 18.5112 17.9777V9.89273C18.5112 7.38578 16.6863 5.44287 14.3229 5.44287ZM17.9129 17.9464L17.883 17.9777H14.9511L14.9212 11.2402C14.9212 10.4882 14.7417 9.92409 14.3528 9.51672C13.9041 9.04666 13.3057 8.79595 12.6775 8.79595C11.421 8.82728 10.4337 9.89276 10.4337 11.2716V17.9777H7.1429V6.38298H10.1046L10.1345 6.41431V8.38855L10.9423 7.54244L10.9722 7.51112C11.5705 6.63369 12.6176 6.06963 13.7245 6.06963H14.3528C16.3572 6.06963 17.9129 7.76183 17.9129 9.89276V17.9464Z" fill="#7900B1"/>
+                  </svg>
+              
+              abc
+            </div>
+          </div>
+        </div>
+        <div class="text-center font-medium seventh-color py-6 md:py-10 ">
+          2021 Abc. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        // add event listeners
+        btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/spruce@1.1.0/dist/spruce.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"></script>
+  <script src="./js.js"></script>
+  <script>
+    Spruce.store('accordion', {
+      tab: 0,
+    });
+
+    const accordion = (idx) => ({
+      handleClick() {
+        this.$store.accordion.tab = this.$store.accordion.tab === idx ? 0 : idx;
+      },
+      handleRotate() {
+        return this.$store.accordion.tab === idx ? 'rotate-180' : '';
+      },
+      handleToggle() {
+        return this.$store.accordion.tab === idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+      }
+    });
+
+    
+  </script>
+  
+</body>
+</html>

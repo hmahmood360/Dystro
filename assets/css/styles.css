@@ -1,0 +1,341 @@
+body{
+    background-color: #FEFDFF;
+}
+
+.primary-color{    color: #183B56; }
+.secondary-color{    color: #011632; }
+.third-color{    color: #5A7184; }
+.forth-color{    color: #36B37E; }
+.fifth-color{    color: #1565D8; }
+.sixth-color{    color: #B3BAC5;}
+.seventh-color{  color: #7900B1;}
+.bg{     background-color: #7900B1;  }
+.bg1{     background-color: #7F13B3;  }
+.bg2{     background-color: #FBF6FF;  }
+.hero-section{
+    background-image:url("background/bg-1.png");
+    background-size: cover;
+    background-position: bottom;
+}
+.lnk{
+    border-bottom: 2px solid #7900B1;
+    width: 40px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.bg3{
+    background-image:url("background/Base.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.carousel-open:checked+.carousel-item {
+    position: static;
+    opacity: 100;
+  }
+
+  .carousel-item {
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+  }
+
+  #carousel-1:checked~.control-1,
+  #carousel-2:checked~.control-2,
+  #carousel-3:checked~.control-3 {
+    display: block;
+  }
+.left{
+    position: absolute;
+    margin-top: 173px;
+    margin-left: 67%;
+}
+.right{
+    position: absolute;
+    margin-top: 173px;
+    margin-right: 23%;
+}
+.left-2{
+    position: absolute;
+    margin-top: 173px;
+    margin-left: 66%;
+}
+.right-2{
+    position: absolute;
+    margin-top: 173px;
+    margin-right: 22%;
+}
+.left-3{
+    position: absolute;
+    margin-top: 163px;
+    margin-left: 65.5%;
+}
+.right-3{
+    position: absolute;
+    margin-top: 163px;
+    margin-right: 21.5%;
+}
+.show{
+    display: block ;
+}
+.remove{
+    display: none ;
+}
+@media screen and (max-width: 1535px) {
+    .left{
+        position: absolute;
+        margin-top: 173px;
+        margin-left: 84%;
+    }
+    .right{
+        position: absolute;
+        margin-top: 173px;
+        margin-right: 2%;
+    }
+    .left-2{
+        position: absolute;
+        margin-top: 173px;
+        margin-left: 82.7%;
+    }
+    .right-2{
+        position: absolute;
+        margin-top: 173px;
+        margin-right: 0.7%;
+    }
+    .left-3{
+        position: absolute;
+        margin-top: 163px;
+        margin-left: 82.1%;
+    }
+    .right-3{
+        position: absolute;
+        margin-top: 163px;
+        margin-right: 0%;
+    }
+  } 
+@media screen and (max-width: 1247px) {
+    .left{
+        position: absolute;
+        margin-top: 270px;
+        margin-left: 80%;
+    }
+    .right{
+        position: absolute;
+        margin-top: 270px;
+        margin-right: 1%;
+    }
+    .left-2{
+        position: absolute;
+        margin-top: 270px;
+        margin-left: 78.2%;
+    }
+    .right-2{
+        position: absolute;
+        margin-top: 270px;
+        margin-right: -0.8%;
+    }
+    .left-3{
+        position: absolute;
+        margin-top: 260px;
+        margin-left: 77.4%;
+    }
+    .right-3{
+        position: absolute;
+        margin-top: 260px;
+        margin-right: -2%;
+    }
+  } 
+@media screen and (max-width: 1023px) {
+    .left{
+        position: absolute;
+        margin-top: 175px;
+        margin-left: 85%;
+    }
+    .right{
+        position: absolute;
+        margin-top: 175px;
+        margin-right: 1%;
+    }
+    .left-2{
+        position: absolute;
+        margin-top: 175px;
+        margin-left: 83.8%;
+    }
+    .right-2{
+        position: absolute;
+        margin-top: 175px;
+        margin-right: -0.2%;
+    }
+    .left-3{
+        position: absolute;
+        margin-top: 165px;
+        margin-left: 83.2%;
+    }
+    .right-3{
+        position: absolute;
+        margin-top: 165px;
+        margin-right: -0.7%;
+    }
+  }     
+
+@media screen and (max-width: 767px) {
+    .left{
+        position: absolute;
+        margin-top: 110px;
+        margin-left: 85%;
+    }
+    .right{
+        position: absolute;
+        margin-top: 110px;
+        margin-right: 1%;
+    }
+    .left-2{
+        position: absolute;
+        margin-top: 110px;
+        margin-left: 83.7%;
+    }
+    .right-2{
+        position: absolute;
+        margin-top: 110px;
+        margin-right: -0.5%;
+    }
+    .left-3{
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 83%;
+    }
+    .right-3{
+        position: absolute;
+        margin-top: 100px;
+        margin-right: -1.1%;
+    }
+  }
+@media screen and (max-width: 580px) {
+    .left{
+        position: absolute;
+        margin-top: 137px;
+        margin-left: 83%;
+    }
+    .right{
+        position: absolute;
+        margin-top: 137px;
+        margin-right: 1%;
+    }
+    .left-2{
+        position: absolute;
+        margin-top: 137px;
+        margin-left: 81.4%;
+    }
+    .right-2{
+        position: absolute;
+        margin-top: 137px;
+        margin-right: -0.5%;
+    }
+    .left-3{
+        position: absolute;
+        margin-top: 127px;
+        margin-left: 80.7%;
+    }
+    .right-3{
+        position: absolute;
+        margin-top: 127px;
+        margin-right: -1.2%;
+    }
+  }
+@media screen and (max-width: 450px) {
+    .left{
+        position: absolute;
+        margin-top: 185px;
+        margin-left: 78%;
+    }
+    .right{
+        position: absolute;
+        margin-top: 185px;
+        margin-right: 1%;
+    }
+    .left-2{
+        position: absolute;
+        margin-top: 185px;
+        margin-left: 76%;
+    }
+    .right-2{
+        position: absolute;
+        margin-top: 185px;
+        margin-right: -1.1%;
+    }
+    .left-3{
+        position: absolute;
+        margin-top: 175px;
+        margin-left: 75%;
+    }
+    .right-3{
+        position: absolute;
+        margin-top: 175px;
+        margin-right: -2.1%;
+    }
+  }
+@media screen and (max-width: 382px) {
+    .left{
+        position: absolute;
+        margin-top: 185px;
+        margin-left: 75%;
+    }
+    .right{
+        position: absolute;
+        margin-top: 185px;
+        margin-right: 1%;
+    }
+    .left-2{
+        position: absolute;
+        margin-top: 185px;
+        margin-left: 72.4%;
+    }
+    .right-2{
+        position: absolute;
+        margin-top: 185px;
+        margin-right: -1.8%;
+    }
+    .left-3{
+        position: absolute;
+        margin-top: 175px;
+        margin-left: 71%;
+    }
+    .right-3{
+        position: absolute;
+        margin-top: 175px;
+        margin-right: -3%;
+    }
+  }
+@media screen and (max-width: 321px) {
+    .left{
+        position: absolute;
+        margin-top: 263px;
+        margin-left: 70%;
+    }
+    .right{
+        position: absolute;
+        margin-top: 263px;
+        margin-right: 1%;
+    }
+    .left-2{
+        position: absolute;
+        margin-top: 263px;
+        margin-left: 66.8%;
+    }
+    .right-2{
+        position: absolute;
+        margin-top: 263px;
+        margin-right: -2.2%;
+    }
+    .left-3{
+        position: absolute;
+        margin-top: 253px;
+        margin-left: 65.3%;
+    }
+    .right-3{
+        position: absolute;
+        margin-top: 253px;
+        margin-right: -3.7%;
+    }
+  }
+
+
